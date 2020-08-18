@@ -1,0 +1,131 @@
+/* soft reset do css */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+.menu{
+    /*background-color: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.menu a{  
+    display: block;
+    padding: 6px 12px;
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:active,
+.menu a:hover {
+    font-family: 'Hepta Slab', serif;
+    background-color: whitesmoke;
+    color: #000000;  
+}
+
+.menu ul{
+    margin: 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li{
+    list-style: none;
+}
+
+a{
+    font-family: 'Hepta Slab', serif;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+body{
+    background-image: linear-gradient(to right, black,#070719);
+    font-family: 'Hepta Slab', serif;
+    /*background-color: rgb(60, 231, 180);*/
+    background-size: auto 100vh;
+    height: 100vh;
+}
+
+.titulo{
+    /*text-align: center;*/
+    padding: 60px 12px 0px 0px;
+    min-height: 100vh;
+}
+
+@media(min-width:1200px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+}
+
+.titulo h1{
+    color: whitesmoke;
+    /*margin-bottom: 2em;*/
+    font-family: 'Hepta Slab', serif;
+    font-size: 2em;
+    line-height: 2em;
+    margin: 2px 2px 2px 2px;
+}
+
+.perfil{
+    display: flex;
+    /*justify-content: flex-end;*/
+    float: right;
+    margin: 2em;
+}
+
+.perfil img{
+    height: 400px;
+    width: 400px;
+    /*border-radius: 50%;*/
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+}
+
+.sobre p{
+    font-family: 'Hepta Slab', serif;
+    color: whitesmoke;
+    text-indent: 1.5em;
+    text-align: justify;
+
+}
+
+.contato{
+    padding: 12px 12px 0px 0px;
+    min-height: 50  vh;
+}
+
+.contato h2{
+    font-family: 'Hepta Slab', serif;
+    color:whitesmoke;
+    font-size: 2em;
+}
+
+.contato a {
+    color:whitesmoke;
+    font-size: 10em;
+    transition: text-shadow 1s;
+}
+
+.contato .grid{
+    text-align: center;
+}
+
+.contato a:active,
+.contato a:hover{
+    text-decoration: none;
+    text-shadow: 10px 10px 7px brown;
+}
